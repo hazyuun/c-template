@@ -2,7 +2,7 @@ CC = gcc
 CCFLAGS = -g -O2 -Werror -Wall -Wextra -Wshadow
 INCLUDE = -Iinclude
 
-TARGET = bin/blk
+TARGET = bin/main
 
 SRC = $(shell find ./src -name "*.c")
 OBJ = $(patsubst ./src/%.c, ./obj/%.o, $(SRC))
